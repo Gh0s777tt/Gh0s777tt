@@ -1,0 +1,61 @@
+name: Generate Metrics (private-aware)
+
+on:
+  schedule:
+    - cron: "30 */12 * * *"   # every 12h, offset from snake
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: metrics-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Base stats + languages (incl. PRIVATE repos)
+        uses: lowlighter/metrics@v3.34
+        with:
+          # Data token: minimal READ-ONLY PAT that can see all repos (incl. private)
+          token: ${{ secrets.METRICS_TOKEN }}
+          # Commit token: built-in Actions token (writes the SVG to THIS repo only)
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: Gh0s777tt
+          filename: github-metrics.svg
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Europe/Warsaw
+          config_display: regular
+          # include private + owned repos in all calculations
+          repositories_affiliations: owner, collaborator
+          repositories: 100
+
+          # Languages — counts PRIVATE repos via the token
+          plugin_languages: yes
+          plugin_languages_limit: 10
+          plugin_languages_sections: most-used
+          plugin_languages_details: percentage, bytes-size
+          plugin_languages_threshold: 0%
+
+          # Achievements — self-contained replacement for the (down) trophy service
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: C
+          plugin_achievements_secrets: yes
+
+          # Year activity calendar (private-aware)
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+          # Black & red theme
+          extras_css: |
+            body { background-color: #0d0d0d !important; color: #e6e6e6 !important; }
+            .border { stroke: #8a0a10 !important; }
+            h2, .title { color: #e50914 !important; }
+            .value, .data .value, .field .value { color: #ffffff !important; }
+            a, .key, .subtitle { color: #ff5a5f !important; }
+            .contribution-graph rect[data-level], .day { }
+            svg .field .value, text { fill: #e6e6e6; }
