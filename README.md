@@ -142,7 +142,7 @@
 
 <div align="center">
 
-<img height="170" src="https://github-readme-streak-stats.herokuapp.com?user=Gh0s777tt&theme=dark&hide_border=true&background=0D0D0D&stroke=8a0a10&ring=E50914&fire=FF5A5F&currStreakLabel=E50914&sideLabels=DDDDDD&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=888888" alt="streak"/>
+<img height="170" src="https://streak-stats.demolab.com?user=Gh0s777tt&theme=dark&hide_border=true&background=0D0D0D&stroke=8a0a10&ring=E50914&fire=FF5A5F&currStreakLabel=E50914&sideLabels=DDDDDD&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=888888" alt="streak"/>
 &nbsp;
 <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gh0s777tt&layout=compact&langs_count=8&hide_border=true&title_color=e50914&text_color=dddddd&bg_color=0d0d0d" alt="top langs"/>
 
@@ -158,7 +158,21 @@
 
 <div align="center">
 
-<img width="98%" src="https://github-profile-trophy.vercel.app/?username=Gh0s777tt&theme=darkhub&no-bg=true&no-frame=true&column=7&margin-w=8&margin-h=8" alt="trophies"/>
+![Repositories](https://img.shields.io/badge/Repositories-21-e50914?style=for-the-badge&logo=github&logoColor=white&labelColor=0d0d0d)
+![Languages](https://img.shields.io/badge/Languages-7%2B-e50914?style=for-the-badge&logo=devdotto&logoColor=white&labelColor=0d0d0d)
+![OS](https://img.shields.io/badge/OS%20from%20scratch-E--OS-e50914?style=for-the-badge&logo=rust&logoColor=white&labelColor=0d0d0d)
+![Pro](https://img.shields.io/badge/GitHub-Pro-e50914?style=for-the-badge&logo=github&logoColor=white&labelColor=0d0d0d)
+
+![Microkernel](https://img.shields.io/badge/Rust-Microkernel-b20710?style=for-the-badge&logo=rust&logoColor=white&labelColor=0d0d0d)
+![Anticheat](https://img.shields.io/badge/Anticheat-17%20zero--FP%20checks-b20710?style=for-the-badge&logo=hackthebox&logoColor=white&labelColor=0d0d0d)
+![SaaS](https://img.shields.io/badge/Bot-Multi--tenant%20SaaS-b20710?style=for-the-badge&logo=discord&logoColor=white&labelColor=0d0d0d)
+![Platform](https://img.shields.io/badge/Platform-Netflix--style-b20710?style=for-the-badge&logo=nextdotjs&logoColor=white&labelColor=0d0d0d)
+
+![2FA](https://img.shields.io/badge/2FA-Enabled-8a0a10?style=for-the-badge&logo=letsencrypt&logoColor=white&labelColor=0d0d0d)
+![Dependabot](https://img.shields.io/badge/Dependabot-Active-8a0a10?style=for-the-badge&logo=dependabot&logoColor=white&labelColor=0d0d0d)
+![Secret Scanning](https://img.shields.io/badge/Secret%20Scanning-On-8a0a10?style=for-the-badge&logo=github&logoColor=white&labelColor=0d0d0d)
+
+<sub>🎖️ &nbsp;GitHub-native achievements (Pull Shark, Quickdraw, YOLO…) render on the profile sidebar automatically.</sub>
 
 </div>
 
