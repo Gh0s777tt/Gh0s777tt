@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" fill="none" role="img" aria-label="GHOST EMPIRE">
+  <defs>
+    <!-- Deep cinematic black backdrop -->
+    <radialGradient id="bgGlow" cx="50%" cy="118%" r="85%">
+      <stop offset="0%" stop-color="#3a0508"/>
+      <stop offset="34%" stop-color="#1a0204"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </radialGradient>
+    <linearGradient id="bgFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Netflix-red title gradient -->
+    <linearGradient id="titleFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff5a5f"/>
+      <stop offset="42%" stop-color="#e50914"/>
+      <stop offset="100%" stop-color="#8a0a10"/>
+    </linearGradient>
+    <!-- Moving shine band -->
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"  stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-700 0" to="700 0" dur="4.5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8a0a10"/>
+      <stop offset="55%" stop-color="#e50914"/>
+      <stop offset="100%" stop-color="#ff5a5f"/>
+    </linearGradient>
+    <filter id="redGlow" x="-30%" y="-60%" width="160%" height="260%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="titleClip"><text x="600" y="160" text-anchor="middle" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="118" letter-spacing="6">GHOST EMPIRE</text></clipPath>
+  </defs>
+
+  <!-- backdrop -->
+  <rect width="1200" height="300" fill="#050505"/>
+  <rect width="1200" height="300" fill="url(#bgGlow)"/>
+
+  <!-- Netflix intro ribbons -->
+  <g opacity="0.5">
+    <rect x="120"  y="300" width="10" height="0" fill="#5c0a0a"><animate attributeName="height" values="0;220;0" dur="3.2s" begin="0s"   repeatCount="indefinite"/><animate attributeName="y" values="300;80;300" dur="3.2s" begin="0s"   repeatCount="indefinite"/></rect>
+    <rect x="180"  y="300" width="10" height="0" fill="#8a0a10"><animate attributeName="height" values="0;300;0" dur="3.2s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="y" values="300;0;300"  dur="3.2s" begin="0.2s" repeatCount="indefinite"/></rect>
+    <rect x="240"  y="300" width="10" height="0" fill="#b20710"><animate attributeName="height" values="0;160;0" dur="3.2s" begin="0.4s" repeatCount="indefinite"/><animate attributeName="y" values="300;140;300" dur="3.2s" begin="0.4s" repeatCount="indefinite"/></rect>
+    <rect x="930"  y="300" width="10" height="0" fill="#b20710"><animate attributeName="height" values="0;180;0" dur="3.2s" begin="0.5s" repeatCount="indefinite"/><animate attributeName="y" values="300;120;300" dur="3.2s" begin="0.5s" repeatCount="indefinite"/></rect>
+    <rect x="990"  y="300" width="10" height="0" fill="#8a0a10"><animate attributeName="height" values="0;300;0" dur="3.2s" begin="0.3s" repeatCount="indefinite"/><animate attributeName="y" values="300;0;300"  dur="3.2s" begin="0.3s" repeatCount="indefinite"/></rect>
+    <rect x="1050" y="300" width="10" height="0" fill="#5c0a0a"><animate attributeName="height" values="0;210;0" dur="3.2s" begin="0.1s" repeatCount="indefinite"/><animate attributeName="y" values="300;90;300"  dur="3.2s" begin="0.1s" repeatCount="indefinite"/></rect>
+  </g>
+
+  <!-- Title -->
+  <g filter="url(#redGlow)">
+    <text x="600" y="160" text-anchor="middle" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="118" letter-spacing="6" fill="url(#titleFill)">GHOST EMPIRE</text>
+  </g>
+  <!-- Shine sweep clipped to title -->
+  <g clip-path="url(#titleClip)"><rect x="0" y="40" width="1200" height="160" fill="url(#shine)"/></g>
+
+  <!-- Subtitle -->
+  <text x="600" y="212" text-anchor="middle" font-family="'Trebuchet MS',Verdana,sans-serif" font-weight="700" font-size="22" letter-spacing="7" fill="#e6e6e6" opacity="0">
+    FORGING SYSTEMS · OS · INFRASTRUCTURE
+    <animate attributeName="opacity" values="0;0;0.92" keyTimes="0;0.25;1" dur="2.4s" begin="0.6s" fill="freeze"/>
+  </text>
+
+  <!-- Netflix loading bar -->
+  <g transform="translate(360,244)">
+    <rect width="480" height="5" rx="2.5" fill="#2a2a2a"/>
+    <rect width="480" height="5" rx="2.5" fill="url(#barGrad)" transform="scale(0,1)">
+      <animateTransform attributeName="transform" type="scale" values="0 1;1 1" dur="2.6s" begin="0.4s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+    </rect>
+  </g>
+
+  <!-- subtle scanlines -->
+  <g opacity="0.05" fill="#ffffff">
+    <rect y="0"   width="1200" height="1"/><rect y="6"  width="1200" height="1"/><rect y="12" width="1200" height="1"/>
+    <rect y="288" width="1200" height="1"/><rect y="294" width="1200" height="1"/>
+  </g>
+  <rect width="1200" height="300" fill="url(#bgFade)" opacity="0.15"/>
+</svg>
