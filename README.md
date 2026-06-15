@@ -138,13 +138,15 @@
 
 <img src="./assets/divider.svg" width="100%"/>
 
-## 📊 &nbsp; THE NUMBERS
+## 📊 &nbsp; THE NUMBERS &nbsp;<sub>· <i>private repos included</i></sub>
 
 <div align="center">
 
+<img width="84%" src="./github-metrics.svg" alt="Ghost Empire metrics — private-aware stats, languages, achievements & activity"/>
+
+<br/>
+
 <img height="170" src="https://streak-stats.demolab.com?user=Gh0s777tt&theme=dark&hide_border=true&background=0D0D0D&stroke=8a0a10&ring=E50914&fire=FF5A5F&currStreakLabel=E50914&sideLabels=DDDDDD&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=888888" alt="streak"/>
-&nbsp;
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gh0s777tt&layout=compact&langs_count=8&hide_border=true&title_color=e50914&text_color=dddddd&bg_color=0d0d0d" alt="top langs"/>
 
 <br/><br/>
 
